@@ -134,7 +134,7 @@ $(document).ready( function() {
         url: dataUrl,
         contentType: "text/csv; charset=utf-8",
         error: function() {
-            alert('Error retrieving csv file');
+            alert('Erro ao carregar CSV');
         },
         success: function(csv) {
             dataCsv = csv;

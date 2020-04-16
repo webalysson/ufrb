@@ -1,4 +1,5 @@
 var dataUrl = 'data/data.csv';
+//var dataUrl = 'https://raw.githubusercontent.com/perrygeo/leaflet-simple-csv/master/data/data.csv';
 var maxZoom = 9;
 var fieldSeparator = '|';
 var baseUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
