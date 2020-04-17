@@ -84,7 +84,8 @@ var addCsvMarkers = function() {
         // pass
     }
     if (total > 0) {
-        $('#search-results').html("Showing " + hits + " of " + total);
+        //$('#search-results').html("Showing " + hits + " of " + total);
+        $('#search-results').html("Cidades ");
     }
     return false;
 };
