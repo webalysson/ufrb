@@ -1,6 +1,6 @@
 var basemap = new L.TileLayer(baseUrl, {maxZoom: 17, attribution: baseAttribution, subdomains: subdomains, opacity: opacity});
 
-var center = new L.LatLng(0, 0);
+var center = new L.LatLng(-14.235,-51.9253);
 
 var map = new L.Map('map', {center: center, zoom: 2, maxZoom: maxZoom, layers: [basemap]});
 
@@ -134,7 +134,7 @@ $(document).ready( function() {
         url: dataUrl,
         contentType: "text/csv; charset=utf-8",
         error: function() {
-            alert('Erro ao carregar CSV');
+            alert('Error retrieving csv file');
         },
         success: function(csv) {
             dataCsv = csv;
