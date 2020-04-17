@@ -10,8 +10,8 @@ var popupOpts = {
 };
 
 var points = L.geoCsv (null, {
-    firstLineTitles: true,
-    fieldSeparator: fieldSeparator,
+    firstLineTitles: true, //considerar o nome das colunas
+    fieldSeparator: fieldSeparator, //setado no config.js
     onEachFeature: function (feature, layer) {
         var popup = '<div class="popup-content"><table class="table table-striped table-bordered table-condensed">';
         for (var clave in feature.properties) {
